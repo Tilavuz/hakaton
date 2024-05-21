@@ -1,6 +1,8 @@
 export default function ErrorPage() {
     return (
-      <div>ErrorPage</div>
+      <div>
+        <p>404. Sahifa topilmadi</p>
+      </div>
     )
   }
   
