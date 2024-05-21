@@ -1,4 +1,5 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom"
+import { ThemeProvider } from "@/components/theme-provider"
 import { Suspense, lazy } from "react"
 
 // Layouts
@@ -32,5 +33,9 @@ export default function App() {
     }
   ])
 
-  return <RouterProvider router={router} />
+  return (
+    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+      <RouterProvider router={router} />
+    </ThemeProvider>
+  )
 }
