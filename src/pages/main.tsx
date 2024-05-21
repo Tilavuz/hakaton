@@ -1,5 +1,7 @@
 export default function Main() {
   return (
-    <div>Main</div>
+    <div className="">
+      
+    </div>
   )
 }
