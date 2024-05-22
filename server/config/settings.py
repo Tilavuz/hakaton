@@ -45,6 +45,8 @@ INSTALLED_APPS = [
     # my apps
     "accounts.apps.AccountsConfig",
     "adduser.apps.AdduserConfig",
+    "excell_tables.apps.ExcellTablesConfig",
+
 ]
 
 MIDDLEWARE = [
