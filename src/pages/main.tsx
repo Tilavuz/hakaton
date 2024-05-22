@@ -1,5 +1,6 @@
 import BarsDataset from "@/components/bars-dataset"
 import StatisticsCard from "@/components/statistics-card"
+import TabsComponent from "@/components/tabs-component"
 import { statistc } from "@/contexts/datas"
 
 export default function Main() {
@@ -15,6 +16,9 @@ export default function Main() {
       </div>
       <div className="w-full">
         <BarsDataset />
+      </div>
+      <div>
+        <TabsComponent />
       </div>
     </div>
   )
