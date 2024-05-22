@@ -15,8 +15,8 @@ export default function SiteBar() {
         <ul className="pt-8 flex flex-col">
           {
             menuList?.map((menu, i) => {
-              return <li className="h-12" key={i}>
-                <NavLink className={`menu dark:text-white px-4 h-full flex items-center gap-2 font-bold hover:underline ${isOpen ? '' : 'justify-center'}`} to={menu.path}>
+              return <li className="h-12 hover:bg-slate-200 active:bg-slate-400" key={i}>
+                <NavLink className={`menu dark:text-white px-4 h-full flex items-center gap-2 font-bold ${isOpen ? '' : 'justify-center'}`} to={menu.path}>
                   {
                     menu.icon
                   }

@@ -1,4 +1,4 @@
-import { PieChart } from "lucide-react"
+import { PieChart, User } from "lucide-react"
 
 
 export const statistc = [
@@ -30,6 +30,11 @@ export const menuList = [
         path: '/',
         icon: <PieChart />
     },
+    {
+      title: 'Profile',
+      path: '/profile',
+      icon: <User />
+  },
 ]
 
 
