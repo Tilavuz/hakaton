@@ -9,14 +9,14 @@ export default function SiteBar() {
 
   return (
     <aside className={`h-screen ${isOpen ? 'w-[20vw]' : ''}`}>
-        <div className="h-[7vh] flex justify-center items-center border-b">
+        <div className="h-[7vh] flex justify-center items-center border-b dark:border-b-white">
             <h1 className={`font-bold text-2xl ${isOpen ? '' : 'hidden'}`}>Dashboard</h1>
         </div>
         <ul className="pt-8 flex flex-col">
           {
             menuList?.map((menu, i) => {
-              return <li className="h-12" key={i}>
-                <NavLink className={`menu dark:text-white px-4 h-full flex items-center gap-2 font-bold hover:underline ${isOpen ? '' : 'justify-center'}`} to={menu.path}>
+              return <li className="h-12 hover:bg-slate-200 active:bg-slate-400" key={i}>
+                <NavLink className={`menu dark:text-white px-4 h-full flex items-center gap-2 font-bold ${isOpen ? '' : 'justify-center'}`} to={menu.path}>
                   {
                     menu.icon
                   }

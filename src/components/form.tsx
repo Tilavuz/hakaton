@@ -18,10 +18,12 @@ import {
   } from "@/components/ui/select"
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+<<<<<<< HEAD:src/components/form.jsx
 import { useInputStringInvalite } from '../form/useInputStringInvalite'
 import {colorBlack, colorFirst,colorRed, colorFormText, hoverColorFirst} from '../constants/style'
+=======
+>>>>>>> cae7ea0c53a7205ccf3df540b0e936f1d5d1343f:src/components/form.tsx
 function FormInput() {
-    const lastName = useInputStringInvalite('')
     return (
         <Dialog >
             <DialogTrigger asChild>
@@ -40,8 +42,12 @@ function FormInput() {
                         <Label htmlFor="lastname" className="text-right">
                             Familiya:
                         </Label>
+<<<<<<< HEAD:src/components/form.jsx
                         <Input id="lastname" className={`w-[250px] mt-2 text-${colorBlack}`} placeholder="Familiya" value={lastName.value} onChange={lastName.onChange} />
                         {lastName.color ? null : <span>Familiya faqat harflardan iborat bo'lishi kerak!</span>}
+=======
+                        <Input id="lastname" className="w-[250px] mt-2 text-black" placeholder="Familiya" />
+>>>>>>> cae7ea0c53a7205ccf3df540b0e936f1d5d1343f:src/components/form.tsx
                     </div>
                     <div className="">
                         <Label htmlFor="name" className="text-right">
