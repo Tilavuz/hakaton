@@ -1,5 +1,5 @@
-import { TargetIndicators } from '@/contexts/datas'
-import { columns } from '@/contexts/datas'
+import { TargetIndicatorsFuture, columnFuture } from '@/contexts/datas'
+
 import Table from './table'
 import { TabsContent, Tabs, TabsList, TabsTrigger } from './ui/tabs'
 
@@ -13,16 +13,16 @@ export default function TabsComponent() {
             <TabsTrigger value="Nemis tiliga o'qiyotganlar ko'rsatkichlar">Nemis tiliga o'qiyotganlar ko'rsatkichlar</TabsTrigger>
         </TabsList>
         <TabsContent value="Maqsadli ko'rsatkichlar">
-          <Table columns={columns} tableData={TargetIndicators}/>
+          <Table columns={columnFuture} tableData={TargetIndicatorsFuture}/>
         </TabsContent>
         <TabsContent value="Jami o'qiyotganlar ko'rsatkichlar">
-          <Table columns={columns} tableData={TargetIndicators}/>
+          <Table columns={columnFuture} tableData={TargetIndicatorsFuture}/>
         </TabsContent>
         <TabsContent value="Ingliz tili o'qiyotganlar ko'rsatkichlar">
-          <Table columns={columns} tableData={TargetIndicators}/>
+          <Table columns={columnFuture} tableData={TargetIndicatorsFuture}/>
         </TabsContent>
         <TabsContent value="Nemis tiliga o'qiyotganlar ko'rsatkichlar">
-          <Table columns={columns} tableData={TargetIndicators}/>
+          <Table columns={columnFuture} tableData={TargetIndicatorsFuture}/>
         </TabsContent>
     </Tabs>
   )

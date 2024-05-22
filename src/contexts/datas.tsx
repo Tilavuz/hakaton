@@ -40,12 +40,11 @@ export const menuList = [
 export const columnFuture = [
     "Hududlar",
     "Jami xorijiy tillarga o'qitilishi kerak bo'lgan yoshlar soni",
-    "Ingliz tiliga o'qitilishi kerak bo'lgan yoshlar soni (B2)",
-    "Ingliz tiliga o'qitilishi kerak bo'lgan yoshlar soni (C1)",
-    "Nemis tiliga o'qitilishi kerak bo'lgan yoshlar soni (C1)",
-    "Nemis tiliga o'qitilishi kerak bo'lgan yoshlar soni (B2)",
+    "Ingliz tiliga o'qitilishi kerak bo'lgan yoshlar soni",
+    "Nemis tiliga o'qitilishi kerak bo'lgan yoshlar soni",
     "Ko'rish",
   ];
+
 export const TargetIndicatorsFuture= [
     {
       id: 1,
@@ -332,7 +331,6 @@ export const columns = [
     "Jami nemis tilida sertifikatga ega yoshlar soni",
     "Ko'rish",
   ];
-
   export const columnEnglish = [
     "Hududlar",
     "Jami ingliz tiliga qiziquvchi yoshlar soni",
@@ -359,7 +357,6 @@ export const columns = [
     "Jami nemis tilida (C1) sertifikatga ega yoshlar soni",
     "Ko'rish",
   ];
-
 
 export const organization = [
   {
@@ -513,4 +510,3 @@ export const organization = [
     "url": "/qashqadaryo/muborak/15-maktab"
   }
 ]
-
