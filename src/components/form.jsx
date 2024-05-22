@@ -19,46 +19,47 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useInputStringInvalite } from '../form/useInputStringInvalite'
+import {colorBlack, colorFirst,colorRed, colorFormText, hoverColorFirst} from '../constants/style'
 function FormInput() {
     const lastName = useInputStringInvalite('')
     return (
         <Dialog >
             <DialogTrigger asChild>
-                <Button className='bg-[#408a7e] px-[30px] ml-2 font-[600] hover:bg-[#3a6a62] transition-all active:bg-[#183431]'>O'quvchi qo'shish</Button>
+                <Button className={`bg-${colorFirst} px-[30px] ml-2 font-[600] hover:bg-${hoverColorFirst} transition-all active:bg-[#183431]`}>O'quvchi qo'shish</Button>
             </DialogTrigger>
             <DialogContent className="lg:max-w-[950px] w-full lg:max-h-[600px] h-full p-8">
                 <DialogHeader>
-                    <DialogTitle className='text-[#408a7e] font-[700] text-[1.5rem]'>O'quvchi qo'shish</DialogTitle>
+                    <DialogTitle className={`text-${colorFirst} font-[700] text-[1.5rem]`}>O'quvchi qo'shish</DialogTitle>
                     <DialogDescription className='pb-2'>
                         Ma'lumotlarni to'gri kiritishga javobgarligingizni unutmang!
                     </DialogDescription>
-                    <hr className='text-[#408a7e] ' />
+                    <hr className={`text-${colorFirst}`}/>
                 </DialogHeader>
-                <div className="py-1 flex flex-wrap text-[#868686] gap-y-5 gap-x-[20px] justify-between items-center self-center">
+                <div className={`py-1 flex flex-wrap text-${colorFormText} gap-y-5 gap-x-[20px] justify-between items-center self-center`}>
                     <div className="">
                         <Label htmlFor="lastname" className="text-right">
                             Familiya:
                         </Label>
-                        <Input id="lastname" className="w-[250px] mt-2 text-black" placeholder="Familiya" value={lastName.value} onChange={lastName.onChange} />
+                        <Input id="lastname" className={`w-[250px] mt-2 text-${colorBlack}`} placeholder="Familiya" value={lastName.value} onChange={lastName.onChange} />
                         {lastName.color ? null : <span>Familiya faqat harflardan iborat bo'lishi kerak!</span>}
                     </div>
                     <div className="">
                         <Label htmlFor="name" className="text-right">
                             Ism:
                         </Label>
-                        <Input id="name" className="w-[250px] mt-2 text-black" placeholder="Ism" />
+                        <Input id="name" className={`w-[250px] mt-2 text-${colorBlack}`} placeholder="Ism" />
                     </div>
                     <div className="">
                         <Label htmlFor="nickname" className="text-right">
                             Otasining ismi:
                         </Label>
-                        <Input id="nickname" className="w-[250px] mt-2 text-black ring-0 outline-none" placeholder="Otasining ismi" />
+                        <Input id="nickname" className={`w-[250px] mt-2 text-${colorBlack} ring-0 outline-none`} placeholder="Otasining ismi" />
                     </div>
                     <div className="">
                         <Label htmlFor="id" className="text-right">
                             JSHSHIR:
                         </Label>
-                        <Input id="id" className="w-[250px] mt-2 text-black" placeholder="JSHSHIR" />
+                        <Input id="id" className={`w-[250px] mt-2 text-${colorBlack}`} placeholder="JSHSHIR" />
                     </div>
                     <div className="">
                         <Label htmlFor="phone" className="text-right">
@@ -73,7 +74,7 @@ function FormInput() {
                         <Label htmlFor="photo" className="text-right">
                             Rasmi:
                         </Label>
-                        <Input id="photo" className="w-[250px] mt-2 text-black" placeholder="Rasmi" type='file' />
+                        <Input id="photo" className={`w-[250px] mt-2 text-${colorBlack}`} placeholder="Rasmi" type='file' />
                     </div>
                     <div className="">
                         <Label htmlFor="school" className="text-right">
@@ -139,8 +140,8 @@ function FormInput() {
                         <Input id="sertificate" value="" className="w-[200px] mt-2" placeholder="Sertifikat" type='file' disabled />
                     </div>
                     <div className=" flex pt-8 gap-3">
-                        <input className='border-[#408a7e] checked:bg-[rgb(64,138,126)] checked:text-[#408a7e]' type='checkbox' />
-                        <Label htmlFor="check" className="text-right text-[#408a7e]">
+                        <input className={`border-${colorFirst} checked:bg-${colorFirst} checked:text-${colorFirst}`}type='checkbox' />
+                        <Label htmlFor="check" className={`text-right text-${colorFirst}`}>
                             Men hamma ma'lumotlarni to'g'ri kiritganimga ishonchim komil.
                         </Label>
                     </div>
@@ -148,8 +149,8 @@ function FormInput() {
                 </div>
                 <hr />
                 <DialogFooter>
-                    <Button className='bg-[#E92D47]'>Clear</Button>
-                    <Button type="submit" className='bg-[#408a7e]' disabled>Save</Button>
+                    <Button className={`bg-${colorRed}`}>Clear</Button>
+                    <Button type="submit" className={`bg-${colorFirst}`} disabled>Save</Button>
                 </DialogFooter>
             </DialogContent>
         </Dialog>

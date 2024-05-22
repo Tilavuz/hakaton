@@ -35,12 +35,11 @@ export const menuList = [
 export const columnFuture = [
     "Hududlar",
     "Jami xorijiy tillarga o'qitilishi kerak bo'lgan yoshlar soni",
-    "Ingliz tiliga o'qitilishi kerak bo'lgan yoshlar soni (B2)",
-    "Ingliz tiliga o'qitilishi kerak bo'lgan yoshlar soni (C1)",
-    "Nemis tiliga o'qitilishi kerak bo'lgan yoshlar soni (C1)",
-    "Nemis tiliga o'qitilishi kerak bo'lgan yoshlar soni (B2)",
+    "Ingliz tiliga o'qitilishi kerak bo'lgan yoshlar soni",
+    "Nemis tiliga o'qitilishi kerak bo'lgan yoshlar soni",
     "Ko'rish",
   ];
+
 export const TargetIndicatorsFuture= [
     {
       id: 1,
@@ -316,9 +315,6 @@ export const TargetIndicatorsFuture= [
       url: "/kokdala",
     },
   ];
-<<<<<<< HEAD
-=======
-
 
 export const columns = [
     "Hududlar",
@@ -329,18 +325,6 @@ export const columns = [
     "Nemis tiliga o'qitilishi kerak bo'lgan yoshlar soni (B2)",
     "Ko'rish",
   ];
-  export const columnNow = [
-    "Hududlar",
-    "Jami xorijiy tillarga o'qitilayotgan yoshlar soni",
-    "Jami ingliz tiliga o'qitilayotgan yoshlar soni",
-    "Foiz",
-    "Jami nemis tiliga o'qitilayotgan yoshlar soni",
-    "Foiz",
-    "Jami ingliz tilida sertifikatga ega yoshlar soni",
-    "Jami nemis tilida sertifikatga ega yoshlar soni",
-    "Ko'rish",
-  ];
->>>>>>> 9d8776760b6e665ad256128f0e4dd9ad969c38a9
   export const columnEnglish = [
     "Hududlar",
     "Jami ingliz tiliga qiziquvchi yoshlar soni",
@@ -367,5 +351,3 @@ export const columns = [
     "Jami nemis tilida (C1) sertifikatga ega yoshlar soni",
     "Ko'rish",
   ];
-
-];

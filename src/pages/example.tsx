@@ -6,6 +6,5 @@ export default function ErrorPage() {
       </div>
     )
   }
-  
   // Jumanazar shu page ni yozing
   

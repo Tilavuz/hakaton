@@ -5,6 +5,7 @@ import { MenuContext } from "@/contexts/toggle-menu";
 import { DropdownMenu, DropdownMenuTrigger } from "@radix-ui/react-dropdown-menu";
 import { DropdownMenuContent, DropdownMenuGroup, DropdownMenuItem, DropdownMenuSeparator } from "./ui/dropdown-menu";
 import { Link } from "react-router-dom";
+import colorRed from '../constants/style'
 
 export default function Header() {
 
@@ -40,7 +41,7 @@ export default function Header() {
                             <DropdownMenuItem>Shaxsiy ma'lumotlarim</DropdownMenuItem>
                         </DropdownMenuGroup>
                         <DropdownMenuSeparator />
-                        <DropdownMenuItem className='text-red-600 font-bold'>Chiqish</DropdownMenuItem>
+                        <DropdownMenuItem className={`text-${colorRed} font-bold`}>Chiqish</DropdownMenuItem>
                     </DropdownMenuContent>
           </DropdownMenu>
         </div>
