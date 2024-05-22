@@ -28,6 +28,8 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("accounts/", include("accounts.urls")),
     path('adduser/', include("adduser.urls")),
+    path("excel", include("excell_tables.urls")),
+
     # API documentation
     path(
         "swagger.<format>/", schema_view.without_ui(cache_timeout=0), name="schema-json"
