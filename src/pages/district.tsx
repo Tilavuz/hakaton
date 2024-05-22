@@ -19,7 +19,7 @@ export default function District() {
       <div className="flex items-center gap-5 flex-wrap justify-between">
         {statistc.map((data, i) => {
           if (data.total) {
-            return <StatisticsCard key={i} data={data} />;
+            return <StatisticsCard key={i} title={data.title} total={data.total} />;
           }
         })}
       </div>

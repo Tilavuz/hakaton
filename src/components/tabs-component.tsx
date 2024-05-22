@@ -1,4 +1,4 @@
-import { TargetIndicatorsFuture, columnFuture } from '@/contexts/datas'
+import { TargetIndicatorsFuture, columnFuture, columnNemis, rowsNemis } from '@/contexts/datas'
 
 import Table from './table'
 import { TabsContent, Tabs, TabsList, TabsTrigger } from './ui/tabs'
@@ -22,7 +22,7 @@ export default function TabsComponent() {
           <Table columns={columnFuture} tableData={TargetIndicatorsFuture}/>
         </TabsContent>
         <TabsContent value="Nemis tiliga o'qiyotganlar ko'rsatkichlar">
-          <Table columns={columnFuture} tableData={TargetIndicatorsFuture}/>
+          <Table columns={columnNemis} tableData={rowsNemis}/>
         </TabsContent>
     </Tabs>
   )

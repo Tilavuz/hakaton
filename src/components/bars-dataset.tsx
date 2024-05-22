@@ -8,7 +8,7 @@ function BarsDataset() {
   const context = useTheme()
   const darkTheme = createTheme({
     palette: {
-      mode: `${context.theme}`,
+      mode: context.theme,
     },
   });
 

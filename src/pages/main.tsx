@@ -30,7 +30,7 @@ export default function Main() {
       <div className="flex gap-4 items-center justify-between mb-12">
         {
           statistc?.map((item, i) => {
-            return <StatisticsCard key={i} data={item}/>
+            return <StatisticsCard key={i} title={item.title} total={item.total}/>
           })
         }
       </div>
