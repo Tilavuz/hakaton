@@ -9,7 +9,7 @@ export default function SiteBar() {
 
   return (
     <aside className={`h-screen ${isOpen ? 'w-[20vw]' : ''}`}>
-        <div className="h-[7vh] flex justify-center items-center border-b">
+        <div className="h-[7vh] flex justify-center items-center border-b dark:border-b-white">
             <h1 className={`font-bold text-2xl ${isOpen ? '' : 'hidden'}`}>Dashboard</h1>
         </div>
         <ul className="pt-8 flex flex-col">

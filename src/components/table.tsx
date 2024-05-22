@@ -23,7 +23,7 @@ const Table = ({ columns, tableData }: { columns: string[], tableData: TableData
           return (
             <tr
               key={i}
-              className={`${i % 2 === 0 ? "bg-[#e6fffb] dark:bg-slate-600" : "bg-white bg-inherit"}`}
+              className={`${i % 2 === 0 ? "bg-[#e6fffb] dark:bg-slate-600" : "bg-white dark:bg-inherit"}`}
             >
               {Object.keys(user).map((title, i) => {
                 return (
