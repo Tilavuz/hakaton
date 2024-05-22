@@ -15,9 +15,11 @@ export default function Main() {
         }
       </div>
       <div className="w-full">
+        <h2 className="uppercase font-bold text-center text-2xl py-8"><i>qashqadaryo</i> viloyatining tumanlar aro statistikasi</h2>
         <BarsDataset />
       </div>
       <div>
+        <h2 className="uppercase font-bold text-center text-2xl py-8">Loyiha doirasida shakillangan ko'rsatkichlar jadvali</h2>
         <TabsComponent />
       </div>
     </div>

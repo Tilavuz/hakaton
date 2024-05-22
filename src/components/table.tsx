@@ -8,10 +8,10 @@ const Table = ({ columns, tableData }: { columns: string[], tableData: TableData
     <table className="table-items">
       <thead>
         <tr>
-          <th className="border border-black text-center w-8">T/R</th>
+          <th className="border border-black dark:border-white text-center w-8">T/R</th>
           {columns.map((data, i) => {
             return (
-              <th key={i} className="border border-black p-2 text-center">
+              <th key={i} className="border border-black dark:border-white p-2 text-center">
                 {data}
               </th>
             );
@@ -23,11 +23,11 @@ const Table = ({ columns, tableData }: { columns: string[], tableData: TableData
           return (
             <tr
               key={i}
-              className={`${i % 2 === 0 ? "bg-[#e6fffb]" : "bg-white"}`}
+              className={`${i % 2 === 0 ? "bg-[#e6fffb] dark:bg-slate-600" : "bg-white bg-inherit"}`}
             >
               {Object.keys(user).map((title, i) => {
                 return (
-                  <td key={i} className="border border-black text-left p-2">
+                  <td key={i} className="border border-black dark:border-white text-left p-2">
                     {title === 'url' ? <Link to={user[title]} className="flex justify-center"> <Eye color="#408a7e" /> </Link> : user[title] }
                   </td>
                 );
