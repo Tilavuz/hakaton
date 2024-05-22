@@ -18,9 +18,7 @@ import {
   } from "@/components/ui/select"
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { useInputStringInvalite } from '../form/useInputStringInvalite'
 function FormInput() {
-    const lastName = useInputStringInvalite('')
     return (
         <Dialog >
             <DialogTrigger asChild>
@@ -39,8 +37,7 @@ function FormInput() {
                         <Label htmlFor="lastname" className="text-right">
                             Familiya:
                         </Label>
-                        <Input id="lastname" className="w-[250px] mt-2 text-black" placeholder="Familiya" value={lastName.value} onChange={lastName.onChange} />
-                        {lastName.color ? null : <span>Familiya faqat harflardan iborat bo'lishi kerak!</span>}
+                        <Input id="lastname" className="w-[250px] mt-2 text-black" placeholder="Familiya" />
                     </div>
                     <div className="">
                         <Label htmlFor="name" className="text-right">

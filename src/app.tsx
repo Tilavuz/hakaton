@@ -8,6 +8,7 @@ import RootLayout from "./layouts/root-layout"
 // Pages
 const ErrorPage = lazy(() => import('./pages/error-page'))
 const Profile = lazy(() => import('./pages/profile'))
+const District = lazy(() => import('./pages/district'))
 import Main from "./pages/main"
 
 // Components
@@ -32,7 +33,19 @@ export default function App() {
         },
         {
           path: 'profile',
-          element: <Profile />
+          element: (
+            <Suspense fallback={<Loader />}>
+              <Profile />
+            </Suspense>
+          )
+        },
+        {
+          path: '/:district',
+          element: (
+            <Suspense fallback={<Loader />}>
+              <District />
+            </Suspense>
+          )
         }
       ]
     }
