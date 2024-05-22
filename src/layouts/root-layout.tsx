@@ -14,7 +14,7 @@ export default function RootLayout() {
             <div className="h-[7vh] border-b">
               <Header />
             </div>
-            <div className="overflow-y-scroll h-[93vh] p-6">
+            <div className="overflow-y-scroll h-[93vh] p-6 pb-24">
               <Outlet />
             </div>
           </div>

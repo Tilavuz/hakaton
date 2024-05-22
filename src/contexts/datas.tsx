@@ -197,7 +197,7 @@ export const TargetIndicators = [
   ];
 
 
-  export const columns = [
+export const columns = [
     "Hududlar",
     "Jami xorijiy tillarga o'qitilishi kerak bo'lgan yoshlar soni",
     "Ingliz tiliga o'qitilishi kerak bo'lgan yoshlar soni (B2)",
@@ -205,4 +205,5 @@ export const TargetIndicators = [
     "Nemis tiliga o'qitilishi kerak bo'lgan yoshlar soni (C1)",
     "Nemis tiliga o'qitilishi kerak bo'lgan yoshlar soni (B2)",
     "Ko'rish",
-  ];
+];
+

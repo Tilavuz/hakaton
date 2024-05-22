@@ -7,6 +7,7 @@ import RootLayout from "./layouts/root-layout"
 
 // Pages
 const ErrorPage = lazy(() => import('./pages/error-page'))
+const Profile = lazy(() => import('./pages/profile'))
 import Main from "./pages/main"
 
 // Components
@@ -28,6 +29,10 @@ export default function App() {
         {
           index: true,
           element: <Main />
+        },
+        {
+          path: 'profile',
+          element: <Profile />
         }
       ]
     }
