@@ -43,9 +43,12 @@ INSTALLED_APPS = [
     "drf_yasg",
     "corsheaders",
     # my apps
-    "accounts.apps.AccountsConfig",
     "adduser.apps.AdduserConfig",
+    "accounts.apps.AccountsConfig",
+    "monitoring.apps.MonitoringConfig",
     "excell_tables.apps.ExcellTablesConfig",
+    "statistika.apps.StatistikaConfig",
+    'whitenoise.runserver_nostatic',
 
 ]
 
