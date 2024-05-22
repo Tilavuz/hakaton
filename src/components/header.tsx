@@ -1,11 +1,17 @@
 import { Menu } from "lucide-react";
 import { ModeToggle } from "./mode-toggle";
+import { useContext } from "react";
+import { MenuContext } from "@/contexts/toggle-menu";
 
 export default function Header() {
+
+
+  const { handleMenu } = useContext(MenuContext)
+  
   return (
     <header className="h-full flex justify-between items-center px-4">
         <div className="">
-            <button>
+            <button onClick={() => handleMenu()}>
                 <Menu size={24}/>
             </button>
         </div>
