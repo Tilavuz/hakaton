@@ -13,7 +13,7 @@ export default function Profile() {
             <form className="">
                 <div className="flex items-center gap-16 mb-6">
                     <div>
-                        <img className="w-[120px] h-[140px]" src="https://redchili21.my/wp-content/uploads/2020/09/3.jpg" alt="profile image" />
+                        <img className="w-[120px] h-[140px]" src="https://media.wired.com/photos/593283809be5e55af6c25915/master/w_2560%2Cc_limit/ff-mat-honan-password-hacker_f.jpg" alt="profile image" />
                     </div>
                     <div className="flex gap-8">
                         <Label className='flex flex-col gap-2'>
@@ -87,11 +87,11 @@ export default function Profile() {
                 <div className="flex gap-4 mb-6">
                     <Label className='flex-1 flex flex-col gap-2'>
                         <span className="font-bold">Lavozimi</span>
-                        <Input type="text" className="uppercase" disabled value="MFY inspektori"/>
+                        <Input type="text" className="uppercase" disabled value="Viloyat hokim yordamchisi"/>
                     </Label>
                     <Label className='flex-1 flex flex-col gap-2'>
-                        <span className="font-bold">Unvoni</span>
-                        <Input type="text" className="uppercase" disabled value="Mayor"/>
+                        <span className="font-bold">Roli</span>
+                        <Input type="text" className="uppercase" disabled value="viloyat admini"/>
                     </Label>
                 </div>
                 <div className="flex items-center justify-end">
