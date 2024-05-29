@@ -29,7 +29,7 @@ export default function Header() {
                 </div>
                 <div>
                   <p className="font-bold">Tilovov Shavqiddin</p>
-                  <p className="font-thin">329472190471</p>
+                  <p className="font-thin text-left">329472190471</p>
                 </div>
               </div>
             </DropdownMenuTrigger>
