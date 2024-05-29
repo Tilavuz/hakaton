@@ -12,10 +12,14 @@ import {
   PaginationNext,
   PaginationPrevious,
 } from "@/components/ui/pagination";
+import { useParams } from "react-router-dom";
 
 export default function District() {
+
+  const { district } = useParams()
   return (
     <div className="">
+      <h1 className="uppercase font-bold text-center text-2xl pb-8">{district} tumani</h1>
       <div className="flex items-center gap-5 flex-wrap justify-between">
         {statistc.map((data, i) => {
           if (data.total) {
