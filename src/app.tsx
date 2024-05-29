@@ -13,6 +13,7 @@ import Main from "./pages/main"
 
 // Components
 import Loader from "./components/loader"
+import Organization from "./pages/organization"
 
 
 export default function App() {
@@ -44,6 +45,14 @@ export default function App() {
           element: (
             <Suspense fallback={<Loader />}>
               <District />
+            </Suspense>
+          )
+        },
+        {
+          path: '/:district/:organization',
+          element: (
+            <Suspense fallback={<Loader />}>
+              <Organization />
             </Suspense>
           )
         }

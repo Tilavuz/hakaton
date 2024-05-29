@@ -685,23 +685,23 @@ export const organization = [
 
   {
     id: 1,
-    region: "1-maktab",
+    region: "Bo'ston mahallasi",
     students: 33,
     english: 13,
     englishFoiz: "40%",
     nemis: 20,
     nemisFoiz: "60%",
-    url: "/qashqadaryo/muborak/1-maktab",
+    url: "/qashqadaryo/muborak/boston",
   },
   {
     id: 2,
-    region: "2-maktab",
+    region: "Tong mahallasi",
     students: 45,
     english: 20,
     englishFoiz: "44%",
     nemis: 25,
     nemisFoiz: "56%",
-    url: "/qashqadaryo/muborak/2-maktab",
+    url: "/qashqadaryo/muborak/tong",
   },
   {
     id: 3,
