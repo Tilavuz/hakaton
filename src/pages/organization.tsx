@@ -1,5 +1,7 @@
+import Table from "@/components/table";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { studentsBobur } from "@/contexts/datas";
 
 export default function Organization() {
   return (
@@ -11,6 +13,7 @@ export default function Organization() {
                 <Button>Qidirish</Button>
             </div>
         </div>
+        <Table columns={[]} tableData={studentsBobur} />
     </div>
   )
 }
