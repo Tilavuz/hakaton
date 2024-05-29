@@ -682,6 +682,7 @@ export const rowsNemis = [
 
 
 export const organization = [
+
   {
     id: 1,
     region: "1-maktab",
@@ -833,10 +834,13 @@ export const organization = [
     url: "/qashqadaryo/muborak/15-maktab",
   },
 ];
-
+export const columnNeighborhood = [
+  "Ism familiya Sharif",'Viloyat','Tuman','Mahalla','Tashkilot','JSHSHIR','Tel. nomer',
+  "Yo'nalish", 'Daraja', 'Status'
+]
 export const studentsBobur = [
   {
-    id: 519,
+    id: 1,
     fullName: "IBRAGIMOVA MOHINUR UMIRZOQ QIZI",
     region: "Qashqadaryo",
     district: "Muborak tumani",
@@ -846,10 +850,10 @@ export const studentsBobur = [
     phone: "998947887692",
     foreignLanguages: "Ingliz tili",
     languageProficiency: "B2",
-    status: "Currently studying"
+    status: "O'qimoqda"
   },
   {
-    id: 558,
+    id: 2,
     fullName: "NURMAMATOV RAMIZ QAHRAMON O‘G‘LI",
     region: "Qashqadaryo",
     district: "Muborak tumani",
@@ -859,33 +863,33 @@ export const studentsBobur = [
     phone: "998976218479",
     foreignLanguages: "Ingliz tili",
     languageProficiency: "IELTS 5.5",
-    status: "Currently studying"
+    status: "O'qimoqda"
   },
   {
-    id: 959,
+    id: 3,
     fullName: "RO‘ZMAMBETOVA HULKAR AZAMAT QIZI",
     region: "Qashqadaryo",
     district: "Muborak tumani",
-    neighborhood: "Bobur MFY",
+    neighborhood: "Bobur",
     educationPlace: "",
     personalId: "60902065660033",
     phone: "+998912255009",
     foreignLanguages: "Ingliz tili",
     languageProficiency: "B2",
-    status: "Currently studying"
+    status: "O'qimoqda"
   },
   {
-    id: 1029,
+    id: 4,
     fullName: "NORCHAYEVA SUNBULA TO‘LQIN QIZI",
     region: "Qashqadaryo",
     district: "Muborak tumani",
-    neighborhood: "Bobur MFY",
+    neighborhood: "Bobur",
     educationPlace: "",
     personalId: "60609055660010",
     phone: "+998 97 677-80-05",
     foreignLanguages: "Ingliz tili",
     languageProficiency: "B2",
-    status: "Currently studying"
+    status: "O'qimoqda"
   }
 ];
 
