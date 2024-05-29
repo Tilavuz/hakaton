@@ -19,3 +19,16 @@ export interface TableDataNemisProps extends TableDataProps {
     nemisCertificateB2?: number,
     nemisCertificateC1?: number,
 }
+
+export interface OrganizationTable extends TableDataProps{
+    fullName?: string,
+    district?: string,
+    neighborhood?: string,
+    educationPlace?: string,
+    personalId?: string,
+    phone?: string,
+    foreignLanguages?: string,
+    languageProficiency?: string,
+    status?: string
+    url: string
+}

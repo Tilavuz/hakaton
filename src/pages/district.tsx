@@ -2,7 +2,6 @@ import StatisticsCard from "@/components/statistics-card";
 import {
   statistc,
 } from "@/contexts/datas";
-import TabsComponent from "@/components/tabs-component";
 import {
   Pagination,
   PaginationContent,
@@ -13,6 +12,7 @@ import {
   PaginationPrevious,
 } from "@/components/ui/pagination";
 import { useParams } from "react-router-dom";
+import TabsOrganization from "@/components/tabs-organization";
 
 export default function District() {
 
@@ -31,7 +31,7 @@ export default function District() {
         <h3 className="text-center font-bold p-4 text-xl">
           LOYIHA DOIRASIDA SHAKILLANTIRILGAN KO'RSATKICHLAR JADVALI
         </h3>
-        <TabsComponent/>
+        <TabsOrganization/>
       </div>
       <Pagination>
         <PaginationContent>

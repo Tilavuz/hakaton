@@ -1,8 +1,8 @@
-import { TableDataNemisProps, TableDataProps } from "@/interface/table-data";
+import { OrganizationTable, TableDataNemisProps, TableDataProps } from "@/interface/table-data";
 import { Eye } from "lucide-react";
 import { Link } from "react-router-dom";
 
-const Table = ({ columns, tableData }: { columns: string[], tableData: TableDataProps[] | TableDataNemisProps[] }) => {
+const Table = ({ columns, tableData }: { columns: string[], tableData: TableDataProps[] | TableDataNemisProps[] | OrganizationTable[] }) => {
 
   return (
     <table className="table-items w-full">
