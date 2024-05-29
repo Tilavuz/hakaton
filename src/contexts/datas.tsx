@@ -833,3 +833,60 @@ export const organization = [
     url: "/qashqadaryo/muborak/15-maktab",
   },
 ];
+
+export const studentsBobur = [
+  {
+    id: 519,
+    fullName: "IBRAGIMOVA MOHINUR UMIRZOQ QIZI",
+    region: "Qashqadaryo",
+    district: "Muborak tumani",
+    neighborhood: "Bobur",
+    educationPlace: "Muborak IELTS",
+    personalId: "61010055660024",
+    phone: "998947887692",
+    foreignLanguages: "Ingliz tili",
+    languageProficiency: "B2",
+    status: "Currently studying"
+  },
+  {
+    id: 558,
+    fullName: "NURMAMATOV RAMIZ QAHRAMON O‘G‘LI",
+    region: "Qashqadaryo",
+    district: "Muborak tumani",
+    neighborhood: "Bobur",
+    educationPlace: "Muborak IELTS",
+    personalId: "51511035660021",
+    phone: "998976218479",
+    foreignLanguages: "Ingliz tili",
+    languageProficiency: "IELTS 5.5",
+    status: "Currently studying"
+  },
+  {
+    id: 959,
+    fullName: "RO‘ZMAMBETOVA HULKAR AZAMAT QIZI",
+    region: "Qashqadaryo",
+    district: "Muborak tumani",
+    neighborhood: "Bobur MFY",
+    educationPlace: "",
+    personalId: "60902065660033",
+    phone: "+998912255009",
+    foreignLanguages: "Ingliz tili",
+    languageProficiency: "B2",
+    status: "Currently studying"
+  },
+  {
+    id: 1029,
+    fullName: "NORCHAYEVA SUNBULA TO‘LQIN QIZI",
+    region: "Qashqadaryo",
+    district: "Muborak tumani",
+    neighborhood: "Bobur MFY",
+    educationPlace: "",
+    personalId: "60609055660010",
+    phone: "+998 97 677-80-05",
+    foreignLanguages: "Ingliz tili",
+    languageProficiency: "B2",
+    status: "Currently studying"
+  }
+];
+
+
